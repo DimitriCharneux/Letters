@@ -21,4 +21,9 @@ public class SimpleLetter extends Letter<Text> {
 		return cost;
 	}
 
+	@Override
+	public String toString() {
+		return "simple letter";
+	}
+
 }

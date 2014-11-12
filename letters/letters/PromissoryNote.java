@@ -22,4 +22,11 @@ public class PromissoryNote extends Letter<Money>{
 		return (1 + 0.1 * this.content.getVal());
 	}
 
+	@Override
+	public String toString() {
+		return "promissory note";
+	}
+	
+	
+
 }

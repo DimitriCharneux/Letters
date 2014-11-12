@@ -3,7 +3,7 @@ package letters.letters;
 import letters.Inhabitant;
 import letters.content.Content;
 
-public abstract class Letter<T extends Content> {
+public abstract class Letter<T extends Content> implements Content {
 	
 	protected Inhabitant sender;
 	
@@ -33,4 +33,5 @@ public abstract class Letter<T extends Content> {
 	
 	public abstract double cout();
 
+	public abstract String toString();
 }
