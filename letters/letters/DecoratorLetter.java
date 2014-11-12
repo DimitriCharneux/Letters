@@ -8,5 +8,6 @@ public abstract class DecoratorLetter<T extends Letter<?>> extends Letter<T>{
 			T content) {
 		super(sender, receiver, content);
 	}
+	
 
 }
