@@ -7,8 +7,9 @@ public class Thanks extends SimpleLetter {
 	}
 	
 	@Override
-	public void action() {
-		System.out.println("<- "+this.receiver.getName()+" receives a thanks letter whose content is a text content ("+this.content.getVal()+") from "+this.sender.getName());
-	}
+	public void action() {}
 
+	public String toString() {
+		return "a thanks letter whose content is a text content ("+this.content.getVal()+")";
+	}
 }

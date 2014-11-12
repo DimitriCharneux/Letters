@@ -24,16 +24,17 @@ public class Inhabitant {
 	
 	public void receiveLetter(Letter<?> letter) {
 		letter.action();
+		System.out.println("<- "+letter.getReceiver().getName()+" receives "+letter.toString()+" from "+letter.getSender().getName());
 	}
 	
 	public void debit(double amount) {
 		this.bankAccount = this.bankAccount - amount;
-		System.out.println("  - "+amount+" are deducted from "+this.name+" balance is now "+this.bankAccount+" euros.");
+		System.out.println("  - "+amount+" euro(s) are deducted from "+this.name+" balance is now "+this.bankAccount+" euros.");
 	}
 	
 	public void credit(double amount) {
 		this.bankAccount = this.bankAccount + amount;
-		System.out.println("  + "+this.name+" account is credited with "+amount+" euros; its balance is now "+this.bankAccount+" euros");
+		System.out.println("  + "+this.name+" account is credited with "+amount+" euro(s); its balance is now "+this.bankAccount+" euros");
 	}
 	
 	public String getName() {

@@ -10,13 +10,7 @@ public class UrgentLetter<T extends Letter<?>> extends DecoratorLetter<T> {
 
 	@Override
 	public void action() {
-		System.out
-		.println("<- "
-				+ this.receiver.getName()
-				+ " receives an Urgent Letter whose content is "+this.content +" from "
-				+ this.sender.getName());
-this.content.action();
-		
+		this.content.action();
 	}
 
 	@Override
@@ -26,7 +20,7 @@ this.content.action();
 
 	@Override
 	public String toString() {
-		return "urgent letter";
+		return "an urgent letter whose content is "+this.content;
 	}
 
 }

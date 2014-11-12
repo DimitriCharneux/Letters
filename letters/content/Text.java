@@ -12,4 +12,8 @@ public class Text implements Content {
 	public String getVal() {
 		return this.val;
 	}
+	
+	public String toString()  {
+		return this.val;
+	}
 }

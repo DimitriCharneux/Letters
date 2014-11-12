@@ -7,7 +7,9 @@ public class Acknowledgment extends SimpleLetter {
 	}
 	
 	@Override
-	public void action() {
-		System.out.println("<- "+this.receiver.getName()+" receives an acknowledgment of receipt from "+this.sender.getName());
+	public void action() {}
+	
+	public String toString() {
+		return "an acknowledgment of receipt";
 	}
 }

@@ -12,9 +12,7 @@ public class SimpleLetter extends Letter<Text> {
 	}
 
 	@Override
-	public void action() {
-		System.out.println("<- "+this.receiver.getName()+" receives a simple letter whose content is a text content ("+this.content.getVal()+") from "+this.sender.getName());
-	}
+	public void action() {}
 
 	@Override
 	public double cout() {
@@ -23,7 +21,7 @@ public class SimpleLetter extends Letter<Text> {
 
 	@Override
 	public String toString() {
-		return "simple letter";
+		return "a simple letter whose content is a text content ("+this.content.getVal()+")";
 	}
 
 }

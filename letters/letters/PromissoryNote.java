@@ -11,7 +11,6 @@ public class PromissoryNote extends Letter<Money>{
 
 	@Override
 	public void action() {
-		System.out.println("<- "+this.receiver.getName()+" receives a promissory note letter whose content is a money content ("+this.content.getVal()+") from "+this.sender.getName());
 		this.sender.debit(this.content.getVal());
 		this.receiver.credit(this.content.getVal());
 		this.receiver.sendLetter(new Thanks(this));
@@ -24,7 +23,7 @@ public class PromissoryNote extends Letter<Money>{
 
 	@Override
 	public String toString() {
-		return "promissory note";
+		return " a promissory note letter whose content is a money content ("+this.content.getVal()+")";
 	}
 	
 	

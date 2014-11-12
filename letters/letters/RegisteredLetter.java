@@ -10,11 +10,6 @@ public class RegisteredLetter<T extends Letter<?>> extends DecoratorLetter<T> {
 
 	@Override
 	public void action() {
-		System.out
-				.println("<- "
-						+ this.receiver.getName()
-						+ " receives a Registered Letter whose content is "+this.content +" from "
-						+ this.sender.getName());
 		this.content.action();
 		this.receiver.sendLetter(new Acknowledgment(this.content));
 	}
@@ -26,7 +21,7 @@ public class RegisteredLetter<T extends Letter<?>> extends DecoratorLetter<T> {
 
 	@Override
 	public String toString() {
-		return "registered letter";
+		return "a registered letter whose content is "+this.content;
 	}
 
 }
