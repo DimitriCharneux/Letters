@@ -3,8 +3,24 @@ package letters.letters;
 import letters.Inhabitant;
 import letters.content.Money;
 
-public class PromissoryNote extends Letter<Money>{
+/**
+ * Class representing a letter content money.
+ * 
+ * @author CHARNEUX Dimitri & MOEVI Alexandre
+ * 
+ */
+public class PromissoryNote extends Letter<Money> {
 
+	/**
+	 * constructor of this class
+	 * 
+	 * @param sender
+	 *            sender of the letter
+	 * @param receiver
+	 *            receiver of the letter
+	 * @param content
+	 *            money in the letter
+	 */
 	public PromissoryNote(Inhabitant sender, Inhabitant receiver, double content) {
 		super(sender, receiver, new Money(content));
 	}
@@ -23,9 +39,8 @@ public class PromissoryNote extends Letter<Money>{
 
 	@Override
 	public String toString() {
-		return "a promissory note letter whose content is a money content ("+this.content.getVal()+")";
+		return "a promissory note letter whose content is a money content ("
+				+ this.content.getVal() + ")";
 	}
-	
-	
 
 }

@@ -2,12 +2,27 @@ package letters.letters;
 
 import letters.Inhabitant;
 
-public abstract class DecoratorLetter<T extends Letter<?>> extends Letter<T>{
+/**
+ * Class representing a letter content another letter.
+ * 
+ * @author CHARNEUX Dimitri & MOEVI Alexandre
+ * 
+ * @param <T>
+ */
+public abstract class DecoratorLetter<T extends Letter<?>> extends Letter<T> {
 
-	public DecoratorLetter(Inhabitant sender, Inhabitant receiver,
-			T content) {
+	/**
+	 * constructor of this class
+	 * 
+	 * @param sender
+	 *            sender of the letter
+	 * @param receiver
+	 *            receiver of the letter
+	 * @param content
+	 *            letter in a decorator letter
+	 */
+	public DecoratorLetter(Inhabitant sender, Inhabitant receiver, T content) {
 		super(sender, receiver, content);
 	}
-	
 
 }
