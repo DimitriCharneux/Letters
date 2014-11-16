@@ -98,4 +98,31 @@ public class Inhabitant {
 	public double getAmount() {
 		return this.bankAccount;
 	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Inhabitant other = (Inhabitant) obj;
+		if (Double.doubleToLongBits(bankAccount) != Double
+				.doubleToLongBits(other.bankAccount))
+			return false;
+		if (city == null) {
+			if (other.city != null)
+				return false;
+		} else if (!city.equals(other.city))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+	
 }
