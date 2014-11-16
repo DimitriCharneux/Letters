@@ -32,7 +32,7 @@ public class UrgentLetter<T extends Letter<?>> extends DecoratorLetter<T> {
 	}
 
 	@Override
-	public double cout() {
+	public int cout() {
 		return 2 * this.content.cout();
 	}
 

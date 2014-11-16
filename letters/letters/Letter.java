@@ -71,7 +71,7 @@ public abstract class Letter<T extends Content> implements Content {
 	 * 
 	 * @return cost of the letter
 	 */
-	public abstract double cout();
+	public abstract int cout();
 
 	public abstract String toString();
 }

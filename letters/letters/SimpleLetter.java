@@ -11,7 +11,7 @@ import letters.content.Text;
  */
 public class SimpleLetter extends Letter<Text> {
 
-	protected static final double cost = 1;
+	protected static final int cost = 1;
 
 	/**
 	 * constructor of this class
@@ -32,7 +32,7 @@ public class SimpleLetter extends Letter<Text> {
 	}
 
 	@Override
-	public double cout() {
+	public int cout() {
 		return cost;
 	}
 

@@ -6,9 +6,8 @@ package letters.content;
  * @author CHARNEUX Dimitri & MOEVI Alexandre
  * 
  */
-public class Text implements Content {
+public class Text extends AbstractContent<String> {
 
-	private String val;
 
 	/**
 	 * constructor of this class
@@ -16,19 +15,10 @@ public class Text implements Content {
 	 * @param text
 	 */
 	public Text(String text) {
-		this.val = text;
-	}
-
-	/**
-	 * method returning the text
-	 * 
-	 * @return the text
-	 */
-	public String getVal() {
-		return this.val;
+		this.value = text;
 	}
 
 	public String toString() {
-		return this.val;
+		return this.value;
 	}
 }

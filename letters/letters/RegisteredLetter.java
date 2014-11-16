@@ -33,7 +33,7 @@ public class RegisteredLetter<T extends Letter<?>> extends DecoratorLetter<T> {
 	}
 
 	@Override
-	public double cout() {
+	public int cout() {
 		return 15 + this.content.cout();
 	}
 

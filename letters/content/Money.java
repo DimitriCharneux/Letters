@@ -6,25 +6,20 @@ package letters.content;
  * @author CHARNEUX Dimitri & MOEVI Alexandre
  * 
  */
-public class Money implements Content {
+public class Money extends AbstractContent<Integer> {
 
-	private double val;
 
 	/**
 	 * constructor of this class
 	 * 
 	 * @param content
 	 */
-	public Money(double content) {
-		this.val = content;
+	public Money(Integer content) {
+		this.value = content;
 	}
 
-	/**
-	 * method for know the values of the money
-	 * 
-	 * @return values of the money
-	 */
-	public double getVal() {
-		return this.val;
+	@Override
+	public String toString() {
+		return this.value.toString();
 	}
 }

@@ -61,7 +61,7 @@ public class Inhabitant {
 	 * 
 	 * @param amount
 	 */
-	public void debit(double amount) {
+	public void debit(Integer amount) {
 		this.bankAccount = this.bankAccount - amount;
 		System.out
 				.println("  - " + amount + " euro(s) are deducted from "
@@ -74,7 +74,7 @@ public class Inhabitant {
 	 * 
 	 * @param amount
 	 */
-	public void credit(double amount) {
+	public void credit(Integer amount) {
 		this.bankAccount = this.bankAccount + amount;
 		System.out.println("  + " + this.name + " account is credited with "
 				+ amount + " euro(s); its balance is now " + this.bankAccount

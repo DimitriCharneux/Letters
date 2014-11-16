@@ -21,7 +21,7 @@ public class PromissoryNote extends Letter<Money> {
 	 * @param content
 	 *            money in the letter
 	 */
-	public PromissoryNote(Inhabitant sender, Inhabitant receiver, double content) {
+	public PromissoryNote(Inhabitant sender, Inhabitant receiver, Integer content) {
 		super(sender, receiver, new Money(content));
 	}
 
@@ -33,8 +33,8 @@ public class PromissoryNote extends Letter<Money> {
 	}
 
 	@Override
-	public double cout() {
-		return (1 + 0.1 * this.content.getVal());
+	public int cout() {
+		return (int)(1 + 0.1 * this.content.getVal());
 	}
 
 	@Override
